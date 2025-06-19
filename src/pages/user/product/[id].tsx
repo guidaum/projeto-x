@@ -1,8 +1,11 @@
-import ProductEditPage from '@/Containers/ProductEdit';
 import { useRouter } from 'next/router';
+import ProductEditPage from '@/Containers/ProductEdit';
 
 export default function Product() {
   const router = useRouter();
   const { id } = router.query;
-  return <ProductEditPage id={id} />;
+
+  const productId = typeof id === 'string' ? Number(id) : undefined;
+
+  return <ProductEditPage id={productId} />;
 }

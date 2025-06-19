@@ -46,6 +46,11 @@ export const Subtitle = styled.p`
   margin-bottom: 30px;
 `;
 
+export const InputsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const InputImageContainer = styled.div`
   display: flex;
   flex-direction: column;

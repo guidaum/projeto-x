@@ -10,7 +10,7 @@ import { Container,CartContainer,CartFooter,CartSection,SummarySection,CartHeade
 import { useState } from 'react';
 
 export default function CartPage() {
-  const { setCart, cart } = useState([]);
+  const [cart, setCart] = useState([]);
 
   return (
     <>

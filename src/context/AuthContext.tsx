@@ -106,7 +106,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       destroyCookie(null, '@task.token', { path: '/' });
       Router.push('/login');
-      setUser(null);
+      setUser(undefined);
     } catch (err) {
       console.log('Erro ao deslogar', err);
     }

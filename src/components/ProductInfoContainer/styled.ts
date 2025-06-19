@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface TypographyProps {
+  active?: boolean;
+}
+
 export const GridContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,7 +11,7 @@ export const GridContainer = styled.div`
   margin-left: 40px;
   border: 1px solid #000;
   border-radius: 10px;
-  height: 100%
+  height: 100%;
 `;
 
 export const GridItem = styled.div`
@@ -18,7 +22,7 @@ export const GridItem = styled.div`
   gap: 40px;
 `;
 
-export const Typography = styled.div`
+export const Typography = styled.div<TypographyProps>`
   display: inline;
   font-size: 24px;
   cursor: pointer;

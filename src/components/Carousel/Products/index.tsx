@@ -41,7 +41,7 @@ const Products: React.FC<PropType> = (props) => {
         console.log(items);
       });
   }
-  function formatarDinheiro(valor) {
+  function formatarDinheiro(valor: number) {
     return valor.toLocaleString('pt-BR', {
       style: 'currency',
       currency: 'BRL',

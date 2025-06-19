@@ -65,7 +65,7 @@ const ProductPage = () => {
   const [actionPrevButtonProducts, setActionPrevButtonProducts] = useState(0);
   const [actionNextButtonProducts, setActionNextButtonProducts] = useState(0);
   const OPTIONS: EmblaOptionsType = { align: 'start' };
-  function formatarDinheiro(valor) {
+  function formatarDinheiro(valor: number) {
     return valor.toLocaleString('pt-BR', {
       style: 'currency',
       currency: 'BRL',

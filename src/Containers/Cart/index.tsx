@@ -1,7 +1,7 @@
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header/Index';
 import { Cart } from '@/components/Cart';
-import { LaterProductCard } from '@/components/LaterProductCard';
+import LaterProductCard from "@/components/LaterProductCard"
 import { Summary } from '@/components/Summary';
 import { Delivery } from '@/components/Delivery';
 import img from '@/config/img/productImg.svg';

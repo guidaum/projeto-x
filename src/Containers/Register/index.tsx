@@ -16,6 +16,7 @@ import { Oswald } from 'next/font/google';
 import { useContext, useState } from 'react';
 import ImageUpload from '@/components/ImageInput';
 import axios from 'axios';
+import type { AxiosError } from 'axios';
 import { AuthContext } from '@/context/AuthContext';
 
 const oswald = Oswald({
@@ -62,7 +63,8 @@ export default function RegisterPage() {
       console.log('Usuário registrado:', response.data);
       onLogIn({ token: response.data.token, user: response.data.user });
     } catch (error) {
-      console.error('Erro no registro:', error.response?.data || error.message);
+      const err = error as AxiosError;
+      console.error('Erro no registro:', err.response?.data || err.message);
     }
   }
 

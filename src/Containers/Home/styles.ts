@@ -2,7 +2,7 @@ import {
   borderRadius,
   color,
 } from './../../../node_modules/@mui/system/index.d';
-import { background } from '@/config/img/floatMenu.svg';
+import  background  from '@/config/img/floatMenu.svg';
 import styled, { css } from 'styled-components';
 import backgroundMobile from '@/config/img/ourMastersBgMobile.svg';
 import elementsMobile from '@/config/img/elementsMobile.svg';
